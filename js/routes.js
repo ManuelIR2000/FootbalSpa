@@ -5,7 +5,7 @@ export default {
     },
     films: {
         path: '/films',
-        controller: 'filmController'
+        controller: 'plController'
     },
     currentPath: {
         path: '',
