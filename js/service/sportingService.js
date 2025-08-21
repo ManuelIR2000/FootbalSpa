@@ -19,6 +19,8 @@ async function getPlayer(id){
     });
 
     const requestToJson = await request.json();
+    console.log(requestToJson);
+    
     return requestToJson;
 }
 
