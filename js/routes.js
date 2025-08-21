@@ -3,9 +3,13 @@ export default {
         path: '/',
         controller: 'homeController'
     },
-    films: {
+    pl: {
         path: '/pl',
         controller: 'plController'
+    },
+    ln:{
+        path:`/ln`,
+        controller:`lnController`
     },
     currentPath: {
         path: '',
