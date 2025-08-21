@@ -11,6 +11,10 @@ export default {
         path:`/ln`,
         controller:`lnController`
     },
+    scp:{
+        path:`/sporting`,
+        controller:`sportingController`
+    },
     currentPath: {
         path: '',
         controller: ''
