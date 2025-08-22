@@ -15,6 +15,10 @@ export default {
         path:`/sporting`,
         controller:`sportingController`
     },
+    matches:{
+        path:`/matches`,
+        controller:`matchesController`
+    },
     currentPath: {
         path: '',
         controller: ''

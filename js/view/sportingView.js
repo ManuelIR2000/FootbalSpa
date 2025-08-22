@@ -1,4 +1,4 @@
-function render(scp) {
+function render(scp, shirtNumber) {
     let scpLogo = document.createElement("div");
     scpLogo.innerHTML= "<img src=/resources/sporting.jpg style=height:100px; />";
     document.body.append(scpLogo);
@@ -22,12 +22,13 @@ function render(scp) {
   <th> Position </th>
   <th>Date Of Birth</th>
   <th>Nacionality </td>
-  <th>Shirt Number </td>
   `;
     table.appendChild(header);
     let itemString;
     const scpPlayers = scp.squad;
     scpPlayers.forEach(async player => {
+      
+
         itemString = `
     <tbody>
   <tr>  
