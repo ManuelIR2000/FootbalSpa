@@ -12,6 +12,7 @@ function render(todayMatches) {
     header.innerHTML = `
      <th>   </th>    
   <th> Competition </th>
+  <Time>
   <th>   </th>    
   <th> Home Team </th>
     <th>   </th>    
@@ -30,6 +31,7 @@ function render(todayMatches) {
   <tr>
    <td> <img src="${element.competition.emblem}" style="height:30px;"/> </td>   
     <td>${element.competition.name}</td>
+    <td>${element.utcDate}</td>
     <td> <img src="${element.homeTeam.crest}" style="height:30px;"/> </td>  
     <td>${element.homeTeam.name}</td>
     <td> <img src="${element.awayTeam.crest}" style="height:30px;"/> </td>  
