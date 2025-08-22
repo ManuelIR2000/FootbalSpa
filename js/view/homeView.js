@@ -15,11 +15,18 @@ function render(searchedLeague) {
     form.appendChild(button);
 
 
-    let counter = 1;
+
     const table = document.createElement("table");
-    table.className = "table table-bordered";
-    const header = document.createElement("tr");
-    header.innerHTML = `
+
+
+
+    button.addEventListener("click", async () => {
+        console.log(inputText.value);
+        table.innerHTML = "";
+
+        table.className = "table table-bordered";
+        const header = document.createElement("tr");
+        header.innerHTML = `
    
   <th> Position </th>
   <th> Logo </th>
@@ -29,12 +36,8 @@ function render(searchedLeague) {
   <th> Ties </td>
   <th> Losses </td>
   `;
-    table.appendChild(header);
-    container.appendChild(table);
-
-    button.addEventListener("click", async () => {
-        console.log(inputText.value);
-        
+        table.appendChild(header);
+        container.appendChild(table);
         const league = await searchedLeague(inputText.value);
 
         const leagueStandings = league.standings[0].table;
