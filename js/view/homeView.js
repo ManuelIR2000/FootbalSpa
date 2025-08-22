@@ -41,7 +41,7 @@
     table.innerHTML += itemString;
     counter++;
   });
-  //table.appendChild(item);
+  table.appendChild(item);
   list.appendChild(table);
   container.appendChild(list);
 

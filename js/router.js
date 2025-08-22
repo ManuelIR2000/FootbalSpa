@@ -12,7 +12,11 @@ async function launchController(controllerName) {
     console.log(controllerName);
     try {
         const module = await import(`./controler/${controllerName}.js`);
-        module.init();
+        const button = document.getElementById("button");
+
+             module.init();
+        
+       
     } catch (e) {
         console.error(e);
     }
