@@ -1,32 +1,47 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SPA with History API Routing</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"
-        ></script>
-        <script type="module" src="js/index.js"></script>
-        <link rel="stylesheet" href="css/stylesheet.css" />
-    </head>
 
-    <body>
-        <nav id="anchors" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="/" id="home-href">HOME</a>
-            <a href="/pl" id="pl-href">Premier League</a>
-            <a href="/ln" id="ucl-href">Liga Portugal </a>
-            <a href="/sporting" id="ucl-href">Sporting</a>
-             <a href="/matches" id="ucl-href">Today's Matches</a>
-        </nav>
-        <div id="container"></div>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA with History API Routing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+    <nav id="anchors" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="/" id="home-href">HOME</a>
+        <a href="/pl" id="pl-href">Premier League</a>
+        <a href="/ln" id="ucl-href">Liga Portugal </a>
+        <a href="/sporting" id="ucl-href">Sporting</a>
+        <a href="/matches" id="ucl-href">Today's Matches</a>
+    </nav>
+    <div id="container"></div>
+
+
+    <label for="site-search">Search a League:</label>
+    <input type="search" id="leagueSearch" name="q" />
+    <button id="button">Search</button>
+    
+    <table class="" table table-bordered>
+        <tr>
+            <th scope="col">League</th>
+            <th scope="col">Code</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td scope="row">UCL</td>
+                <td scope="row">CL</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
 </html>
